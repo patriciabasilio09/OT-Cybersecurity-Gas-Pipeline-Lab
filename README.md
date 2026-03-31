@@ -150,7 +150,7 @@ Suspicious Data Detected
 ---
 
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Add authentication to Node-RED
 - Implement encrypted communication
