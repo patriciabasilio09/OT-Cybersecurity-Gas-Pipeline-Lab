@@ -1,0 +1,509 @@
+{
+        "id": "23cefcc6963de77a",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a1695ab09fe1b00f",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "/dev/ttyACM0",
+        "serialbaud": "9600",
+        "databits": 8,
+        "parity": "none",
+        "stopbits": 1,
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": 10000
+    },
+    {
+        "id": "bdc2f3f62bcb2203",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "529370ee67c86b7c",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "e1dcb278db26b9c9",
+        "type": "ui_group",
+        "name": "System Status",
+        "tab": "bdc2f3f62bcb2203",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0d85bc973b287dd6",
+        "type": "ui_group",
+        "name": "Process Data",
+        "tab": "bdc2f3f62bcb2203",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cdacf2d056fb230d",
+        "type": "ui_group",
+        "name": "Process Data",
+        "tab": "bdc2f3f62bcb2203",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d488fe9646360d97",
+        "type": "ui_group",
+        "name": "Security Alert",
+        "tab": "bdc2f3f62bcb2203",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "12451282f52842e4",
+        "type": "serial in",
+        "z": "23cefcc6963de77a",
+        "name": "",
+        "serial": "a1695ab09fe1b00f",
+        "x": 550,
+        "y": 220,
+        "wires": [
+            [
+                "7d3a42d33c6718b1",
+                "970b45d4ad848943"
+            ]
+        ]
+    },
+    {
+        "id": "a9ca0792c6f7193e",
+        "type": "debug",
+        "z": "23cefcc6963de77a",
+        "name": "Debug for Main Function",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7d3a42d33c6718b1",
+        "type": "function",
+        "z": "23cefcc6963de77a",
+        "name": "Main Function",
+        "func": "let data =msg.payload\n\nlet pressureMatch = data.match(/Pressure:\\s*(\\d+)/);\nlet statusMatch =data.match(/Status:\\s*([A-Z]+)/);\nlet valveMatch =data.match(/Valve:\\s*(\\w+)/);\nlet alarmMatch =data.match(/Alarm:\\s*(\\w+)/);\n    let pressure=0;\n    let status = \"UNKNOWN\";\n    let valve = \"OFF\";\n    let alarm = \"OFF\";\nif (pressureMatch !== null) {\n    pressure=Number(pressureMatch[1]);\n}\nif (statusMatch !== null){\n    status=statusMatch[1];\n}\nif (valveMatch !== null){\n    valve=valveMatch[1];\n }\n if (alarmMatch !== null){\n    alarm=alarmMatch[1];\n }\nreturn[\n        { payload: pressure},\n        { payload: status},\n        { payload: valve},\n        { payload: alarm}\n];\n\n\n",
+        "outputs": 4,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 220,
+        "wires": [
+            [
+                "a9ca0792c6f7193e",
+                "19c924a4819ead98"
+            ],
+            [
+                "bfe6197e59e1834b"
+            ],
+            [
+                "37299410cf20a34c"
+            ],
+            [
+                "d2f2c6a81ab99861"
+            ]
+        ]
+    },
+    {
+        "id": "19c924a4819ead98",
+        "type": "ui_gauge",
+        "z": "23cefcc6963de77a",
+        "name": "",
+        "group": "0d85bc973b287dd6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Pressure",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1023",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1140,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "e6fb01c12038077a",
+        "type": "ui_text",
+        "z": "23cefcc6963de77a",
+        "group": "0d85bc973b287dd6",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1310,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "b294fcca34144feb",
+        "type": "ui_text",
+        "z": "23cefcc6963de77a",
+        "group": "e1dcb278db26b9c9",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Valve",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1310,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "6571a8541f5327d6",
+        "type": "ui_text",
+        "z": "23cefcc6963de77a",
+        "group": "e1dcb278db26b9c9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Alarm",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1310,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "bfe6197e59e1834b",
+        "type": "function",
+        "z": "23cefcc6963de77a",
+        "name": "Status Color",
+        "func": "\nlet status = msg.payload;\n\nif (status == \"LOW\"){\n    msg.payload = \"<font color='blue'><b>LOW</b></font>\";\n}\nelse if (status == \"NORMAL\") {\n    msg.payload = \"<font color='green'><b>NORMAL</b></font>\";\n}\nelse if (status == \"HIGH\") {\n    msg.payload = \"<font color='orange'><b>HIGH</b></font>\";\n}\nelse if (status == \"CRITICAL\") {\n    msg.payload = \"<font color='red'><b>CRITICAL</b></font>\";\n}\nelse {\n    msg.payload = \"<font color='gray'><b>UNKNOWN</b></font>\";\n}\n return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 340,
+        "wires": [
+            [
+                "e6fb01c12038077a"
+            ]
+        ]
+    },
+    {
+        "id": "37299410cf20a34c",
+        "type": "function",
+        "z": "23cefcc6963de77a",
+        "name": "Valve Color",
+        "func": "\nlet valve = msg.payload;\n\nif (valve == \"OPEN\"){\n    msg.payload =\"<font color='green'><b>OPEN</b></font>\";\n}\n\nelse {\n    msg.payload = \"<font color='gray'><b>CLOSED</b></font>\";\n}\n return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 400,
+        "wires": [
+            [
+                "b294fcca34144feb"
+            ]
+        ]
+    },
+    {
+        "id": "d2f2c6a81ab99861",
+        "type": "function",
+        "z": "23cefcc6963de77a",
+        "name": "Alarm Color",
+        "func": "let alarm = msg.payload;\n\nif (alarm == \"ON\"){\n    msg.payload = \"<font color='red'><b>ON</b></font>\";\n}\nelse {\n    msg.payload = \"<font color='gray'><b>OFF</b></font>\";\n}\n return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 460,
+        "wires": [
+            [
+                "6571a8541f5327d6"
+            ]
+        ]
+    },
+    {
+        "id": "57e446e32a54f84d",
+        "type": "inject",
+        "z": "23cefcc6963de77a",
+        "name": "Attack Trigger",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 270,
+        "y": 360,
+        "wires": [
+            [
+                "bf96d54fd69e2137"
+            ]
+        ]
+    },
+    {
+        "id": "bf96d54fd69e2137",
+        "type": "function",
+        "z": "23cefcc6963de77a",
+        "name": "Fake Data Injection",
+        "func": "msg.payload=\"Pressure: 100 | Status: LOW | Valve: OPEN | Alarm: OFF\";\n//msg.payload=\"Pressure: 950 | Status: CRITICAL | Valve: CLOSED | Alarm: OFF\";\n//msg.payload=\"Pressure: 750 | Status:HIGH | Valve: CLOSED | Alarm: OFF\";\n//msg.payload=\"Pressure: 500 | Status: NORMAL | Valve: CLOSED | Alarm: OFF\";\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 360,
+        "wires": [
+            [
+                "7d3a42d33c6718b1",
+                "970b45d4ad848943"
+            ]
+        ]
+    },
+    {
+        "id": "2ee0b17cb8135628",
+        "type": "ui_text",
+        "z": "23cefcc6963de77a",
+        "group": "d488fe9646360d97",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Alert",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 910,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "970b45d4ad848943",
+        "type": "function",
+        "z": "23cefcc6963de77a",
+        "name": "Detection Function",
+        "func": "let data=msg.payload;\n\nlet pressureMatch = data.match(/Pressure:\\s*(\\d+)/);\nlet valveMatch = data.match(/Valve:\\s*([A-Z]+)/);\nlet alarmMatch = data.match(/Alarm:\\s*([A-Z]+)/);\n\nlet pressure= 0;\nlet valve = \"UNKNOWN\";\nlet alarm = \"UNKNOWN\";\n\nif (pressureMatch !== null){\n    pressure=Number(pressureMatch[1]);\n}\n\nif (alarmMatch !== null){\n    alarm= alarmMatch[1];\n}\nif (valveMatch !== null){\n    valve=valveMatch[1];\n}\n\n//Detection rules\nif (pressure < 300 && valve == \"OPEN\"){\n    msg.payload = \"Suspicious Data Detected: LOW pressure with valve OPEN\";\n}\nelse if (pressure >=850 && alarm ==\"OFF\"){\n    msg.payload = \"Suspicious Data Detected: CRITICAL pressure with alarm OFF\";\n}\nelse if (pressure >= 700 && pressure <850 && valve == \"CLOSED\"){\n    msg.payload = \"Suspicious Data Detected: HIGH pressure with valve CLOSED\"\n}\nelse{\n    msg.payload = \"Normal\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 480,
+        "wires": [
+            [
+                "2ee0b17cb8135628",
+                "7a4e4da9a79ba435"
+            ]
+        ]
+    },
+    {
+        "id": "7a4e4da9a79ba435",
+        "type": "debug",
+        "z": "23cefcc6963de77a",
+        "name": "Debug for Detection Function",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "0103a4037e935b85",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-node-serialport": "2.0.3",
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
