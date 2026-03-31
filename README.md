@@ -10,7 +10,7 @@ This project helped me understand not just how OT systems operate, but also how 
 
 ---
 
-## ⚙️ System Architecture
+## System Architecture
 
 ![Architecture](images/architecture.png)
 
@@ -57,6 +57,13 @@ Sensor (Potentiometer) → Arduino → Serial Communication → Raspberry Pi →
 ### Critical Condition
 ![Critical](images/dashboard_critical.png)
 
+### Additional System States
+
+See full range of system behavior in the /images folder:
+- LOW
+- NORMAL
+- HIGH
+- CRITICAL
 ---
 
 ## Cybersecurity Implementation
