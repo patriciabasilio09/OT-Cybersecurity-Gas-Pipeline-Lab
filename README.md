@@ -190,3 +190,10 @@ Suspicious Data Detected
 - Implement encrypted communication
 - Expand detection rules
 - Simulate additional attack scenarios
+
+---
+
+## Final Thoughts
+
+This project challenged me to think beyond just building a system and focus on how it could be attacked and secured. It gave me hands-on experience with OT concepts, networking, and real-world cybersecurity scenarios.
+
