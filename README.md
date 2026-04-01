@@ -186,7 +186,6 @@ Suspicious Data Detected
 
 ## Future Improvements
 
-- Add authentication to Node-RED
 - Implement encrypted communication
 - Expand detection rules
 - Simulate additional attack scenarios
