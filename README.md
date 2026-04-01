@@ -1,4 +1,5 @@
 # OT Cybersecurity Lab: Gas Pipeline Monitoring System
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 
 ## Overview
 
