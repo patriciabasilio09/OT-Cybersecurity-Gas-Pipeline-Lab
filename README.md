@@ -65,6 +65,33 @@ See full range of system behavior in the /images folder:
 - HIGH
 - CRITICAL
 ---
+## Node-RED Flow
+
+This flow represents the core SCADA logic of the system. It includes:
+
+- Serial data ingestion from Arduino  
+- Data parsing and processing  
+- Dashboard visualization  
+- Simulated attack injection  
+- Detection of anomalous system states  
+
+![Node-RED Flow](images/node_red_flow.png)
+
+---
+## 🔌 Hardware Setup
+
+### Arduino + Sensors
+![Arduino Setup](images/arduino_real_setup.jpg)
+
+### Raspberry Pi Controller
+![Raspberry Pi](images/raspberry_pi_setup.jpg)
+
+### Full System Setup
+![Full System](images/full_system_setup.jpg)
+
+For wiring reference, see the schematic in the /images folder.
+
+---
 
 ## Cybersecurity Implementation
 
